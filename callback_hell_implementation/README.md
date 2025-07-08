@@ -1,2 +1,6 @@
-Problem Statement: Random User & Country Explorer (Callback Hell Edition)
-This problem challenges developers to navigate a simulated "callback hell" scenario by chaining together multiple asynchronous REST API calls, relying exclusively on nested callbacks. The objective is to retrieve comprehensive information about a random user and their associated country, with each subsequent API call dependent on the data from the previous one. The process begins by fetching a random user's name, email, and nationality from the Random User API. This nationality code is then used to query the REST Countries API to obtain detailed country information. Subsequently, the local currency of that country will be used to fetch the latest exchange rate from USD to that currency via an Exchange Rate API. Finally, the country's capital city will be used to determine its timezone via a TimeZone API. This exercise specifically prohibits the use of Promises or async/await to highlight the complexities and challenges of deeply nested callback structures in asynchronous programming.
+Simulated "callback hell".
+Flow :
+Get a random user with name, email, and nationality.
+Use nationality code to get full country details.
+Use country currency to get exchange rate.
+Display all gathered information
